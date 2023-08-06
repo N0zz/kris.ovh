@@ -26,11 +26,12 @@
         #text {
             font-family: 'Courier New', Courier, monospace;
             color: lightgreen;
+            transition: 0.3s linear;
             padding: calc(0.5vh + 0.5vw);
         }
 
         a:hover {
-            transition: 0.3s;
+            transition: 0.3s linear;
             color: green;
         }
 
@@ -57,8 +58,17 @@
             left: 100%;
             top: 50%;
             transform: translate(-100%, -50%);
-            padding-right: 2vh;
+            padding: 2vh;
+            min-width: 300px;
+            opacity: 1;
+            transition: 0.5s linear;
         }
+        @media only screen and (max-width: 1200px) {
+            #twitter {
+              opacity: 0;
+              transition: 0.5s linear;
+            }
+          }
     </style>
 </head>
 
@@ -74,7 +84,7 @@
 
 <body>
     <div id="twitter">
-        <a class="twitter-timeline" data-width="10vw" data-height="60vh" data-theme="dark"
+        <a class="twitter-timeline" data-width="" data-height="" data-theme="dark"
             href="https://twitter.com/krisu_tech" data-proofer-ignore>Tweets by krisu_tech</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
