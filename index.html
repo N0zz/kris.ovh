@@ -52,6 +52,13 @@
             line-height: calc(2vh + 2vw);
             text-align: left;
         }
+        #twitter {
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            transform: translate(-100%, -50%);
+            padding-right: 2vh;
+        }
     </style>
 </head>
 
@@ -66,6 +73,12 @@
 </script>
 
 <body>
+    <div id="twitter">
+        <a class="twitter-timeline" data-width="10vw" data-height="60vh" data-theme="dark"
+            href="https://twitter.com/krisu_tech">Tweets by krisu_tech</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </div>
     <div id="center">
         <div id="text">
             Krzysztof Kołodziejczyk<br>
